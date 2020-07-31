@@ -1,0 +1,31 @@
+<div>
+    <div class="row">
+        <button (click)="handleInput('1')">1</button>
+        <button (click)="handleInput('2')">2</button>
+        <button (click)="handleInput('3')">3</button>
+    </div>
+    <div class="row">
+        <button (click)="handleInput('4')">4</button>
+        <button (click)="handleInput('5')">5</button>
+        <button (click)="handleInput('6')">6</button>
+    </div>
+    <div class="row">
+        <button (click)="handleInput('7')">7</button>
+        <button (click)="handleInput('8')">8</button>
+        <button (click)="handleInput('9')">9</button>
+
+    </div>
+    <div class="row">
+        <button (click)="handleInput('0')">0</button>
+        <button (click)="evaluateExpr()">=</button>
+        <button (click)="clearExpr()">C</button>
+    </div>
+    <div class="row">
+        <button (click)="handleInput('+')">+</button>
+        <button (click)="handleInput('-')">-</button>
+        <button (click)="handleInput('*')">*</button>
+    </div>
+    <div class="row">
+        <button (click)="handleInput('/')">/</button>
+    </div>
+</div>
