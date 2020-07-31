@@ -1,7 +1,7 @@
 <div class="screen">
-    <div class="arg1">{{expr.arg1}}</div>
-    <div class="operator">{{expr.operator}}</div>
-    <div class="arg2">{{expr.arg2}}</div>
+    <div class="arg1" (click)="onSelect('arg1')">{{expr.arg1}}</div>
+    <div class="operator" (click)="onSelect('operator')">{{expr.operator}}</div>
+    <div class="arg2" (click)="onSelect('arg2')">{{expr.arg2}}</div>
     <div> = </div>
     <div class="value">{{expr.value}}</div>
 </div>

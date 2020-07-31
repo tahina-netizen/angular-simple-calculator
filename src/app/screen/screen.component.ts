@@ -18,4 +18,8 @@ export class ScreenComponent implements OnInit {
     this.expr = this.memoryService.getExpr();
   }
 
+  onSelect(name: string): void {
+    this.memoryService.selected = name;
+  }
+
 }
