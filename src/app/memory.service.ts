@@ -7,7 +7,7 @@ import { Expression } from './expression';
 })
 export class MemoryService {
 
-  expr: Expression = new Expression(0, 0, null);
+  expr: Expression = new Expression(0, 0, '_');
   selected = 'arg1';
 
   constructor() { }
@@ -31,7 +31,7 @@ export class MemoryService {
   clearExpr(): void {
     this.expr.arg1 = 0;
     this.expr.arg2 = 0;
-    this.expr.operator = null;
+    this.expr.operator = '_';
     this.expr.value = null;
   }
 
